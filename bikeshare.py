@@ -19,23 +19,23 @@ def get_filters():
     """
     print('Hello! Let\'s explore some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-    print('Please enter "chicago" or "new_york_city" or "washington".')
+    print('Please enter "chicago" or "new_york_city" or "washington". Note: this must be in lower case.')
     validinput = False
     city = ""
     while validinput == False:
-        city = input("enter city").lower().strip()
+        city = input("enter city").lower()
         if city == "chicago" or city == "new_york_city" or city == "washington":
             validinput = True
         else:
             print("Invalid command.")
 
     # TO DO: get user input for month (all, january, february, ... , june)
-    print('Please enter "01" for January, "02" for February, etc. for the first 6 months, or "*" if you want all of the first 6 months.')
+    print('Please enter "01" for January, "02" for February, etc. for the first 6 months, or "first 6 months" if you want all of the first 6 months.')
     month = ""
     validinput = False
     while validinput == False:
         month = input("enter month").lower().strip()
-        if month == "*" or month == "01" or month == "02" or month == "03" or month == "04" or month == "05" or month == "06":
+        if month == "first 6 months" or month == "01" or month == "02" or month == "03" or month == "04" or month == "05" or month == "06":
             validinput = True
         else:
             print("Invalid command.")
@@ -46,7 +46,7 @@ def get_filters():
     validinput = False
     while validinput == False:
         day = input("enter day").lower().strip()
-        if day == "*" or day == "monday" or day == "tuesday" or day == "wednesday" or day == "thursday" or day == "friday" or day == "saturday" or day == "sunday":
+        if day == "full week" or day == "monday" or day == "tuesday" or day == "wednesday" or day == "thursday" or day == "friday" or day == "saturday" or day == "sunday":
             validinput = True
         else:
             print("Invalid command.")
