@@ -23,7 +23,7 @@ def get_filters():
     validinput = False
     city = ""
     while validinput == False:
-        city = input("enter city").lower().strip()
+        city = input("enter city").lower()
         if city == "chicago" or city == "new_york_city" or city == "washington":
             validinput = True
         else:
@@ -34,7 +34,7 @@ def get_filters():
     month = ""
     validinput = False
     while validinput == False:
-        month = input("enter month").lower().strip()
+        month = input("enter month").lower()
         if month == "first 6 months" or month == "01" or month == "02" or month == "03" or month == "04" or month == "05" or month == "06":
             validinput = True
         else:
@@ -45,7 +45,7 @@ def get_filters():
     day = ""
     validinput = False
     while validinput == False:
-        day = input("enter day").lower().strip()
+        day = input("enter day").lower()
         if day == "full week" or day == "monday" or day == "tuesday" or day == "wednesday" or day == "thursday" or day == "friday" or day == "saturday" or day == "sunday":
             validinput = True
         else:
