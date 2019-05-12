@@ -19,7 +19,7 @@ def get_filters():
     """
     print('Hello! Let\'s explore some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-    print('Please enter "chicago" or "new_york_city" or "washington".')
+    print('Please enter "chicago" or "new_york_city" or "washington". Note: this must be in lower case.')
     validinput = False
     city = ""
     while validinput == False:
@@ -30,7 +30,7 @@ def get_filters():
             print("Invalid command.")
 
     # TO DO: get user input for month (all, january, february, ... , june)
-    print('Please enter "01" for January, "02" for February, etc. for the first 6 months, or "first 6 months" if you want all of the first 6 months.')
+    print('Please enter "01" for January, "02" for February, etc. for the first 6 months, or "first 6 months" if you want all of the first 6 months. Note: this must be in lower case.')
     month = ""
     validinput = False
     while validinput == False:
