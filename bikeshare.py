@@ -30,23 +30,23 @@ def get_filters():
             print("Invalid command.")
 
     # TO DO: get user input for month (all, january, february, ... , june)
-    print('Please enter "01" for January, "02" for February, etc. for the first 6 months, or "first 6 months" if you want all of the first 6 months.')
+    print('Please enter "01" for January, "02" for February, etc. for the first 6 months, or "*" if you want all of the first 6 months.')
     month = ""
     validinput = False
     while validinput == False:
         month = input("enter month").lower().strip()
-        if month == "first 6 months" or month == "01" or month == "02" or month == "03" or month == "04" or month == "05" or month == "06":
+        if month == "*" or month == "01" or month == "02" or month == "03" or month == "04" or month == "05" or month == "06":
             validinput = True
         else:
             print("Invalid command.")
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
-    print('Please enter "monday" or "tuesday" or "wednesday" or "thursday" or "friday" or "saturday" or "sunday" or "full week" if you want the every day of the week.')
+    print('Please enter "monday" or "tuesday" or "wednesday" or "thursday" or "friday" or "saturday" or "sunday" or "*" if you want the every day of the week.')
     day = ""
     validinput = False
     while validinput == False:
         day = input("enter day").lower().strip()
-        if day == "full week" or day == "monday" or day == "tuesday" or day == "wednesday" or day == "thursday" or day == "friday" or day == "saturday" or day == "sunday":
+        if day == "*" or day == "monday" or day == "tuesday" or day == "wednesday" or day == "thursday" or day == "friday" or day == "saturday" or day == "sunday":
             validinput = True
         else:
             print("Invalid command.")
